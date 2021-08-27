@@ -19,6 +19,11 @@ header {
     grid-template-columns: 1fr 1fr;
     font-size: 20px;
     font-family: 'Barlow', sans-serif;
+    background-color: black;
+}
+
+header > a {
+    background-color: black;
 }
 
 .cerrarSesion:hover {
@@ -117,4 +122,80 @@ p {
     color: #0c2c45;
     background-color: #f0f2f5;
 }
+
+@media screen and (min-width: 320px) {
+    header {
+        width: 100%;
+        height: 70px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .informacion {
+        width: 90%;
+    }
+
+    .botoness {
+        margin-left: 10%;    
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .informacion {
+        width: 90%;
+    }
+
+    .botoness {
+        margin-left: 10%;    
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        width: 100%;
+        height: 70px;
+        font-size: 250%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .informacion {
+        width: 90%;
+        height: 100%;
+        font-size: 250%;
+        justify-self: center;
+    }
+
+    .botoness {
+        margin-left: 10%;    
+        margin-top: 20px;
+        font-size: 250%;
+        width: 90%;
+        justify-self: center;
+        margin-right: 10%;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+}
+
 

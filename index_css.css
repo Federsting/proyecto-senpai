@@ -87,4 +87,20 @@
     text-decoration: underline;
 }
 
+@media screen and (min-width: 320px) {
+    * {
+        top
+    }
+}
 
+@media screen and (min-width: 600px) {
+    * {
+        top
+    }
+}
+
+@media screen and (min-width: 800px) {
+    * {
+        top
+    }
+}
