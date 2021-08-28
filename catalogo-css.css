@@ -37,16 +37,16 @@
     gap: 0.5rem;
   }
 
-  .producto>img {
+  .producto > img {
     width: 50%;
     align-self: center;
   }
 
-  .producto>p {
+  .producto > p {
       font-size: 25px;
   }
 
-  .producto>button {
+  .producto > button {
     font-size: 15px;
     color: #f0f2f5;
     background-color: #bf2424;
