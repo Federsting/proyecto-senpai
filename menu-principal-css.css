@@ -123,26 +123,39 @@ p {
     background-color: #f0f2f5;
 }
 
-@media screen and (min-height: 500px) {
+@media screen and (max-width: 600px) {
     header {
+        width: auto;
 
+    }
+
+    a {
+        margin: auto;
+    }
+
+    h1 {
+        width: auto;
+    }
+
+    .cerrarSesion {
+        margin: auto;
+        padding: auto;
     }
 
     main {
         display: grid;
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr;
     }
 
     .informacion {
-        width: 80%;
-        margin-right: %;
+        width: auto;
+        padding: 2%;
     }
 
     .botoness {
-        width: 80%;
-        margin-top: 15px;
-        margin-left: 10%;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 90%;
     }
-
 }
 
