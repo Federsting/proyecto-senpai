@@ -62,3 +62,25 @@
         border-color: #f0f2f5;
         cursor: pointer;
     }
+
+
+    @media screen and (max-width: 600px) {
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 50%;
+        font-size: 80%;
+        margin-left: 25%;
+      }
+
+      header {
+        font-size: 70%;
+        height: 10%;
+        margin-left: 10%;
+        width: auto;
+        color: #0c2c45;
+        background-color: #f0f2f5;
+      }
+    }
+
+    @media screen and (max-width: 1000px)
