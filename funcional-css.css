@@ -63,3 +63,36 @@ padding-right: 100px;
 .horarios {
 padding-right: 80px;
 }
+
+@media screen and (max-width: 600px) {
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        font-size: 20px;
+        font-family: 'Barlow', sans-serif;
+        }
+        
+        td {
+        padding-top: 2%;
+        }
+        
+        .dias {
+        padding-right: 30px;
+        }
+        
+        .horarios {
+        padding-right: 0px;
+        }
+
+        button {
+            font-family: 'Barlow', sans-serif;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-style: none;
+            font-size: 90%;
+            }        
+}
