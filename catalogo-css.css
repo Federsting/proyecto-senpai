@@ -18,6 +18,85 @@
     font-family: 'Barlow', sans-serif;
   }
 
+  h3 {
+    font-size: 200%;
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Barlow', sans-serif;
+    color: #0c2c45;
+    margin-bottom: 1%;
+  }
+
+  
+
+  aside {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-family: 'Barlow', sans-serif;
+    color: #0c2c45;
+    font-size: 150%;
+  }
+
+  #preventa {
+    width: 50%;
+    margin-left: 20%;
+  }
+
+  .precio {
+    padding-left: 40%;
+    padding-top: 1%;
+  }
+
+  .prod {
+    padding-left: 10%;
+    padding-top: 1%;
+  }
+
+  .pagar {
+    padding-top: 1%;
+  }
+
+  #btn {
+    width: 50%;
+    font-family: 'Barlow', sans-serif;
+    background-color: #02ad2c;
+    color: white;
+    font-size: 80%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+  }
+
+  #btn:hover {
+    background-color: #fc0303;
+    cursor: pointer;
+  }
+
+  #btnDos {
+    width: 50%;
+    font-family: 'Barlow', sans-serif;
+    background-color: #fc0303;
+    color: white;
+    font-size: 80%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+  }
+
+  #btnDos:hover {
+    cursor: pointer;
+  }
+
+  .separadorUno {
+    margin-bottom: 1%;
+    margin-top: 0;
+  }
+
+  hr {
+    margin-top: 2%;
+  }
+
+
   main {
     background-color: white;
     display: grid;
