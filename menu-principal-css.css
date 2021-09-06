@@ -139,7 +139,7 @@ p {
 
     .cerrarSesion {
         margin: auto;
-        padding: auto;
+        padding: 0;
     }
 
     main {
