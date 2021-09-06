@@ -90,10 +90,35 @@ const crearYAgregarProducto = (producto) => {
 
     botonAgregar.textContent = "Agregar al carrito"
 
+
+
+
+    const tbody = document.getElementsByTagName("tbody")[0];
+
+    botonAgregar.addEventListener("click", function (event) {
+        const filaProducto = document.createElement("tr");
+        const prod = document.createElement("td");
+        const precio = document.createElement("td");
+
+        filaProducto.classList.add("nuevosElementos");
+        prod.classList.add("prod");
+        precio.classList.add("precio");
+
+        prod.textContent = producto.nombre;
+        precio.textContent = `$${producto.precio}`;
+
+        tbody.appendChild(filaProducto);
+        filaProducto.appendChild(prod);
+        filaProducto.appendChild(precio);
+
+    });
+
+
+
+
+
     main.appendChild(contenedorDelProducto);
 };
 
 productos.forEach(crearYAgregarProducto);
-
-
 

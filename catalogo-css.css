@@ -160,6 +160,28 @@
         color: #0c2c45;
         background-color: #f0f2f5;
       }
+
+      aside {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        font-size: 100%;
+      }
+
+      .tabla {
+        margin-right: 90%;
+        padding: 0%;
+      }
+
+      .pagar {
+        margin-left: 5%; 
+        width: 110%;
+      }
+
+      .btnDos {
+        width: 19%;
+      }
     }
+
+    
 
     @media screen and (max-width: 1000px)
