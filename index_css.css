@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+.imgg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .formLogIn {
+      background-color:  #0c2c45;
+      width: 400px;
+      color: #f0f2f5;
+      padding: 30px;
+      margin: auto;
+      margin-top: 40px;
+      border-radius: 5px;
+  }
+
+  .datos {
+      width: 100%;
+      margin-bottom: 5px;
+      margin-left: -10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+      background-color: #f0f2f5;
+      border-radius: 5px;
+      font-family: 'Barlow', sans-serif;
+  }
+
+  .boton {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #f0f2f5;
+    border-radius: 5px;
+    background-color: #0c2c45;
+    color: #f0f2f5;
+    font-size: 19px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.boton:hover {
+    background-color: #d3d4db;
+    color: #0c2c45;
+    border-color: #0c2c45;
+}
+  
+.botonCrear {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #f0f2f5;
+    border-radius: 5px;
+    background-color: #bf2424;
+    color: #f0f2f5;
+    font-size: 19px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.botonCrear:hover {
+    background-color: #ed1d0e;
+    color: #f0f2f5;
+    border-color: #f0f2f5;
+}
+
+.forgetPassword {
+    margin-left: 100px;
+    background-color: #0c2c45;
+    color: #f0f2f5;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.forgetPassword:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .formLogIn {
+        width: 70%;
+    }
+
+    .forgetPassword {
+        margin: auto;
+        padding-left: 12%;
+    }
+}
