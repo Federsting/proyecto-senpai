@@ -90,6 +90,9 @@ const crearYAgregarProducto = (producto) => {
 
     botonAgregar.textContent = "Agregar al carrito"
 
+
+
+
     const tbody = document.getElementsByTagName("tbody")[0];
 
     botonAgregar.addEventListener("click", function (event) {
@@ -104,18 +107,18 @@ const crearYAgregarProducto = (producto) => {
         prod.textContent = producto.nombre;
         precio.textContent = `$${producto.precio}`;
 
-
         tbody.appendChild(filaProducto);
         filaProducto.appendChild(prod);
         filaProducto.appendChild(precio);
 
-
-
     });
+
+
+
+
+
     main.appendChild(contenedorDelProducto);
 };
 
-
 productos.forEach(crearYAgregarProducto);
-
 
