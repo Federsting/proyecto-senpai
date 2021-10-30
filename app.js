@@ -1,5 +1,5 @@
 const express = require("express");
-
+const cors = require("cors");
 const path = require("path");
 
 const app = express();
@@ -8,39 +8,41 @@ const port = 4000;
 
 app.use(express.static('public'));
 
+app.use(cors());
+
 app.get("/index", (req, res,) => {
     res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/menu-principal.html", (req, res) => {
+app.get("/menu-principal", (req, res) => {
     res.sendFile(path.join(__dirname + "/menu-principal.html"));
 });
 
-app.get("/catalogo.html", (req, res) => {
+app.get("/catalogo", (req, res) => {
     res.sendFile(path.join(__dirname + "/catalogo.html"));
 });
 
-app.get("/dance-fit.html", (req, res) => {
+app.get("/dance-fit", (req, res) => {
     res.sendFile(path.join(__dirname + "/dance-fit.html"));
 });
 
-app.get("/funcional.html", (req, res) => {
+app.get("/funcional", (req, res) => {
     res.sendFile(path.join(__dirname + "/funcional.html"));
 });
 
-app.get("/spinning.html", (req, res) => {
+app.get("/spinning", (req, res) => {
     res.sendFile(path.join(__dirname + "/spinning.html"));
 });
 
-app.get("/gap.html", (req, res) => {
+app.get("/gap", (req, res) => {
     res.sendFile(path.join(__dirname + "/gap.html"));
 });
 
-app.get("/olvidaste-la-contrasena.html", (req, res) => {
+app.get("/olvidaste-la-contrasena", (req, res) => {
     res.sendFile(path.join(__dirname + "/olvidaste-la-contrasena.html"));
 });
 
-app.get("/abonar.html", (req, res) => {
+app.get("/abonar", (req, res) => {
     res.sendFile(path.join(__dirname + "/abonar.html"));
 });
 
