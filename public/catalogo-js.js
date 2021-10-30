@@ -64,6 +64,7 @@ const productos = [
     },
 ];
 
+productosCarrito = [];
 
 const main = document.getElementsByTagName("main")[0];
 
@@ -111,11 +112,18 @@ const crearYAgregarProducto = (producto) => {
         filaProducto.appendChild(prod);
         filaProducto.appendChild(precio);
 
+
+        productosCarrito.push(producto);
+
+        const productoTotalCarrito = document.getElementById("totalPrecio");
+        productoTotalCarrito.innerHTML = productosCarrito.reduce(function (total, producto) {
+            console.log(total, producto);
+            return total + producto.precio
+        },
+            0);
+
+
     });
-
-
-
-
 
     main.appendChild(contenedorDelProducto);
 };
