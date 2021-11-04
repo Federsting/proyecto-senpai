@@ -89,6 +89,6 @@ const usuarios = [
     {
         number: "1",
         mail: "fbc@gmail.com",
-        password: "$2a$10$wBQ0OWmFXs1dsVlTZLBTbu/q/rt/.RBBupUTnn108iZCNQSjLWnY6",
+        password: "$2a$12$rmOSmmddSV1WNfaVztsHLu3s3tTJ2SyMiGKaSIze1/Y1qRjVmQFxq",
     },
 ];

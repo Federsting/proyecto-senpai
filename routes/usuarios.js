@@ -1,7 +1,7 @@
-const express = require("express");
-const router = express.Router();
-
-router.get("./registro", (req, res, next) => {
-    res.send({ success: true, users: users });
-});
-
+[
+    {
+        number: "1",
+        mail: "fbc@gmail.com",
+        password: "$2a$12$rmOSmmddSV1WNfaVztsHLu3s3tTJ2SyMiGKaSIze1/Y1qRjVmQFxq",
+    },
+];
