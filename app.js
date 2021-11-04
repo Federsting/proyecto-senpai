@@ -3,6 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const bodyParser = require("body-parser");
 
+
 const authRouter = require("./routes/auth");
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/auth', authRouter);
+
 
 app.get("/index", (req, res,) => {
     res.sendFile(path.join(__dirname + "/index.html"));
@@ -55,7 +57,6 @@ app.get("/abonar", (req, res) => {
 app.get("/registro", (req, res) => {
     res.sendFile(path.join(__dirname + "/registro.html"));
 });
-
 
 app.listen(port, () => {
     console.log(`Corriendo en el http://localhost:${port}/index`);
