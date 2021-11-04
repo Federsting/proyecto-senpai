@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const bodyParser = require("body-parser");
 
 const authRouter = require("./routes/auth");
 const app = express();
@@ -10,6 +11,8 @@ const port = 4000;
 app.use(express.static(path.join("public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(cors());
 app.use('/auth', authRouter);
 
@@ -53,6 +56,7 @@ app.get("/registro", (req, res) => {
     res.sendFile(path.join(__dirname + "/registro.html"));
 });
 
+
 app.listen(port, () => {
-    console.log(`Corriendo en el http://localhost:${port}`);
+    console.log(`Corriendo en el http://localhost:${port}/index`);
 });

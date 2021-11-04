@@ -23,11 +23,12 @@
     </top>
 
     <section class="formLogIn">
-        <input class="datos" type="number" id="number" placeholder="Usuario">
-        <input class="datos" type="password" id="password" placeholder="Contraseña">
+        <form action="/menu-principal" method="post">
+            <input class="datos" type="number" id="number" placeholder="Usuario">
+            <input class="datos" type="password" id="password" placeholder="Contraseña">
 
-        <a href="/menu-principal" style="text-decoration: none;"><button class="boton">Iniciar sesión</button></a>
-
+            <input type="submit" class="boton" value="Iniciar sesión">
+        </form>
 
         <a href="/olvidaste-la-contrasena" class="forgetPassword">
             ¿Has olvidado la contraseña?

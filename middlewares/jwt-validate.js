@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const TOKEN_SECRET = "UnaClaveParaFirmarToken";
+const TOKEN_SECRET = "FirmaDelToken";
 
 const verifyToken = (req, res, next) => {
     try {

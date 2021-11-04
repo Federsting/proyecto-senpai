@@ -1,4 +1,3 @@
-
 const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -11,8 +10,8 @@ router.get("/", (req, res) => {
     res.json({ success: true });
 });
 
-router.post("/register", async (req, res) => {
-    if (req.body.mail && req.body.name && req.body.password) {
+router.post("./registro", async (req, res) => {
+    if (req.body.mail && req.body.number && req.body.password) {
         if (/^\S+@\S+\.\S+$/.test(req.body.mail) === false) {
             res
                 .status(400)
@@ -34,7 +33,7 @@ router.post("/register", async (req, res) => {
         const password = await bcrypt.hash(req.body.password, salt);
 
         const newUser = {
-            name: req.body.name,
+            number: req.body.number,
             mail: req.body.mail,
             password: password,
         };
@@ -50,7 +49,7 @@ router.post("/register", async (req, res) => {
     }
 });
 
-router.post("/login", async (req, res, next) => {
+router.post("./index", async (req, res, next) => {
     try {
         const user = usuarios.find((u) => u.mail === req.body.mail);
 
@@ -69,7 +68,7 @@ router.post("/login", async (req, res, next) => {
 
         const token = jwt.sign(
             {
-                name: user.name,
+                number: user.number,
                 mail: user.mail,
             },
             TOKEN_SECRET
@@ -81,14 +80,14 @@ router.post("/login", async (req, res, next) => {
     }
 });
 
-router.get("/usuarios", verifyToken, (req, res) => {
+router.get("/usuarios.js", verifyToken, (req, res) => {
     return res.json({ error: null, usuarios });
 });
 module.exports = router;
 
 const usuarios = [
     {
-        name: "Fede",
+        number: "1",
         mail: "fbc@gmail.com",
         password: "$2a$10$wBQ0OWmFXs1dsVlTZLBTbu/q/rt/.RBBupUTnn108iZCNQSjLWnY6",
     },
