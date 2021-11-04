@@ -1,5 +1,5 @@
 {
-  "name": "proyectoWebConNodeJs",
+  "name": "proyectowebconnodejs",
   "version": "1.0.0",
   "main": "catalogo-js.js",
   "scripts": {
@@ -28,5 +28,5 @@
     "path": "^0.12.7"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "Pasos para iniciar el proyecto y que sea visible en el browser (Chrome)."
 }
