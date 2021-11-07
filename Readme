@@ -4,7 +4,7 @@ Pasos para iniciar el proyecto y que sea visible en el browser (Chrome).
 2) Apretamos a la vez "Ctrl + Ñ" y en la ventana cambiamos la terminal a "BASH"
 3) Escribimos el codigo npm "init --yes" + Enter y esperamos que inicie
 4) Luego vamos a escribir el siguiente codigo para que se instalen todos los paquetes que figuran en el
-package.json y para esto usaremos "npm install --yes" y esperamos que termine. 
+package.json y para esto usaremos "npm install bcrypt body-parser cors expres express jsonwebtoken nodemon path --yes" y esperamos que termine. 
 5) El siguiente paso es levantar el servidor que lo podemos hacer de dos maneras, escribiendo en la terminal
 node "app.js + Enter" o escribiendo "npm run start" (para iniciar el nodemon, extension que actualiza ante 
 cualquier cambio en los archivos modificados). 

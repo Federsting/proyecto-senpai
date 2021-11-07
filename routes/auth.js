@@ -49,7 +49,7 @@ router.post("/registro", async (req, res) => {
     }
 });
 
-router.post("./index", async (req, res, next) => {
+router.post("/index", async (req, res, next) => {
     try {
         const user = usuarios.find((u) => u.mail === req.body.mail);
 
