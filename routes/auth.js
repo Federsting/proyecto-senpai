@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
     res.json({ success: true });
 });
 
-router.post("./registro", async (req, res) => {
+router.post("/registro", async (req, res) => {
     if (req.body.mail && req.body.number && req.body.password) {
         if (/^\S+@\S+\.\S+$/.test(req.body.mail) === false) {
             res
