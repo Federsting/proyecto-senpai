@@ -9,4 +9,4 @@ package.json y para esto usaremos "npm install bcrypt body-parser cors expres ex
 node "app.js + Enter" o escribiendo "npm run start" (para iniciar el nodemon, extension que actualiza ante 
 cualquier cambio en los archivos modificados). 
 6) Una vez iniciado el servidor tiene que aparecer en la terminal algo como "Corriende en el http://localhost:4000/index"
-que es la ruta que debemos ingresar en el navegador para acceder a nuestro proyecto.
+que es la ruta que debemos ingresannr en el navegador para acceder a nuestro proyecto.
